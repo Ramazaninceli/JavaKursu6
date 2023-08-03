@@ -1,0 +1,14 @@
+Double, double
+int sayi;  -> default değeri 0
+String isim; -> default null
++ birleştirmiştik
+concat  birleştirmiştik
+
+Student ogr1=new Student;
+Kisi ogr1=new Student;
+Set itemler=new HashSet();
+
+int sayi1=5;
+int sayi2=10;
+
+sayi1=sayi2;

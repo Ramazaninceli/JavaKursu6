@@ -1,0 +1,8 @@
+ /* Kullanıcıya çeşitli stok yönetimi işlemlerini gerçekleştirebileceği bir program tasarlaması isteniyor.
+   1- Bu program, kullanıcıya bir menü sunmalı ve kullanıcının seçimine göre ilgili işlemi gerçekleştirmelidir.
+   2- İşlemler arasında yeni ürün ekleme, stok miktarını güncelleme ve stoktaki ürünleri listeleme gibi seçenekler olmalıdır.
+   3- Yeni ürün ekleme işlemi, kullanıcıdan ürün adı ve stok miktarı bilgisi almalı ve bu bilgileri stok listesine eklemelidir.
+   4- Stok miktarını güncelleme işlemi, kullanıcıdan güncellenmek istenen bir ürün adı ve yeni stok miktarı almalı ve
+   ilgili ürünün stok miktarını güncellemelidir.
+   5- Stoktaki ürünleri listeleme işlemi, stok listesindeki ürünleri ve stok miktarlarını kullanıcıya göstermelidir.
+   6- Kullanıcı, istediği işlemi seçebilmeli ve programın sonlanması için çıkış seçeneğini seçebilmelidir. */

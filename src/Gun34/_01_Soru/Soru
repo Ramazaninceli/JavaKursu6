@@ -1,0 +1,23 @@
+// 1- Arac isimli bir superclass olusturunuz, fields : renk, motorHacmi, marka olsun.
+    // 2- Consructor ekleyiniz.get ve set metodları ve toString Metodunu ekleyiniz.
+    // 3- Bu sınıftan  Otobus sınıfını üretiniz, otobusun ayrıca yolcuKapasitesi field ını ekleyiniz.
+    // 4- Bir AracPark isimli içinde main olan bir sınıf olucturunuz ve Otobus ten
+    //    nesne oluşturarak, Otobusun özelliklerinin tümünü ekrana yazdırınız.
+
+    hocam ben birşey sormak istiyrum kodu okumak için Mainde debuger çalıştırıp aldığı değerleri görmek istiyorum ancak diğer classlara atlamıyr varmıdır bir çözümü normali bu mudur
+    [19:40]
+    yani hocam bilmediğimiz bir projede kullanılan classlar okumak için aslında
+    [19:40]
+    sordum
+    [19:40]
+    f8 hcam da atlamıyor diğer classa ya
+    [19:41]
+    tmm hocam deneyeyim
+    [19:41]
+    f7 dir hocam
+    [19:41]
+    teşekkr ederm
+    [19:42]
+    bilmedipimiz bir projede hangi classları bulmak için çok faydalı olur
+    [19:42]
+    bağlantılarını

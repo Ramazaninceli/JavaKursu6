@@ -1,0 +1,206 @@
+1-
+
+Create a method totalCount()
+
+totalCount() isminde bir method oluşturun.
+
+Parametresi  'Integer Hashset' olmalı
+
+HashSetteki eleman sayısını alın.
+
+totalCount'u döndürün.
+
+_**Örnek:**_ 
+
+hashset ; 4,2,3,1,7
+
+cevap: 5
+
+   public static void main(String[] args) {
+     totalCount(0);
+    }
+    public static void totalCount(Integer HashSet){
+        HashSet<Integer> hs1=new HashSet<>();
+        hs1.add(4);
+        hs1.add(2);
+        hs1.add(3);
+        hs1.add(1);
+        hs1.add(7);
+        System.out.println("hs1.size() = " + hs1.size());
+
+    }
+
+
+ //    2- changeSet() isminde bir method oluşturun.
+ //
+ //    Parametre olarak bir String HashSet   ve  iki String
+ //
+ //    return hashset olmalı
+ //
+ //    Eğer HashSet String 1 e sahipse, String 1 ile String 2 yi değiştirin.
+ //
+ //            **ÖRNEK:**
+ //
+ //    hashset = "banana" , "strawberry" , "kiwi" , "pineapple"
+ //
+ //    String 1 = **banana**
+ //
+ //    String 2 = **peach**
+ //
+ //            **CEVAP:** "peach" , "strawberry" , "kiwi" , "pineapple"
+
+
+
+     public static void main(String[] args) {
+         HashSet<String> hs1=new HashSet<>();
+         hs1.add("banana");
+         hs1.add("strawberry");
+         hs1.add("kiwi");
+         hs1.add("pineapple");
+
+         System.out.println("hs1 eski hali = " + hs1);
+
+         System.out.println("hs1 son hali"+ changeSet(hs1,"banana","peach"));
+
+     }
+
+
+     public static HashSet changeSet(HashSet<String> set, String string1, String string2){
+
+         if ((set.contains(string1))){
+             set.remove(string1);
+             set.add(string2);
+         }
+         return set;
+     }
+
+
+ //          3-      commonValues() isminde bir method oluşturun ve parametresi  2 tane hashset olmalı.
+ //
+ //        return tipi arraylist olmalı.
+ //
+ //**ÖRNEĞİN:**
+ //
+ //        İlk Hashset : **"Germany"** , "England" , "South Africa" , **"Brazil" , "USA"**
+ //
+ //        İkinci  hashset  : **"Germany"** , "China" , **"Brazil"** , "France" ,  **"USA"**
+ //
+ //        Ortak değerleri ArrayListe ekleyiniz.
+ //
+ //        çıktı:  "Germany" , "Brazil" ,"USA"
+ //
+ //        ArrayListi yazdırınız.
+
+
+         HashSet<String> hs1=new HashSet<>();
+         hs1.add("Germany");
+         hs1.add("England");
+         hs1.add("South Africa");
+         hs1.add("Brasil");
+         hs1.add("USA");
+
+         HashSet<String> hs2=new HashSet<>();
+         hs2.add("Germany");
+         hs2.add("China");
+         hs2.add("Brasil");
+         hs2.add("France");
+         hs2.add("USA");
+
+         ArrayList<String> Ortaklar=commonValues(hs1,hs2);
+         System.out.println("Ortak elemanlar = " + Ortaklar);
+     }
+
+     public static ArrayList<String> commonValues(HashSet<String> hs1, HashSet<String> hs2){
+         ArrayList<String> Ortaklar=new ArrayList<>();
+         for (String eleman: hs1) {
+             if (hs2.contains(eleman)){
+                 Ortaklar.add(eleman);
+             }
+         }
+         return Ortaklar;
+
+     }
+
+     //        4- removing() isminde bir method oluşturun.
+     //
+     //        Parametre olarak bir LinkedHashset ve iki String ten oluşmalı.
+     //
+     //                Eğer Stringler LinkedHashset 'in içinde varsa, sil.
+     //
+     //        Return tipi linkedhashset
+     //
+     //                Örneğin,
+     //
+     //        linkedhashset : Germany , France , USA , Canada , Mexico , Brazil
+     //
+     //        String 1= Germany
+     //
+     //        String 2 = USA
+     //
+     //                **Germany ve USA 'i sil.**
+     //
+     //        Set'i döndür.
+
+             LinkedHashSet<String> hs1=new LinkedHashSet<>();
+             hs1.add("Germany");
+             hs1.add("France");
+             hs1.add("USA");
+             hs1.add("Canada");
+             hs1.add("Mexico");
+             hs1.add("Brasil");
+             String str1="Germany";
+             String str2="USA";
+
+             System.out.println("önceki hali = " + hs1);
+             LinkedHashSet<String> guncel=removing(hs1,str1,str2);
+             System.out.println("sonraki hali = " + guncel);
+
+         }
+
+         public static LinkedHashSet<String> removing(LinkedHashSet<String> hs1 , String str1, String str2){
+
+         hs1.remove(str1);
+         hs1.remove(str2);
+
+         return hs1;
+         }
+
+       //        5- 2D ArrayList
+       //
+       //        Bir tane 2d array [][]   oluşturun ve elemanları =  [  [ 1, 2, 3 ],  [ 4, 5, 6 ],  [ 7, 8, 9 ] ]
+       //
+       //        Store all the elements in one arraylist and print the arraylist
+       //
+       //        Tüm elemanları bir arrayListe yükleyin ve bu arrayList'i yazdırın.
+       //
+       //                **Örnek:**
+       //
+       //```
+       //**Girdi:**
+       //[
+       // [ 1, 2, 3 ],
+       // [ 4, 5, 6 ],
+       // [ 7, 8, 9 ]
+       //]
+       //**Çıktı:** [1,2,3,4,5,6,7,8,9]
+
+               int[][] dizi={{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+
+               for (int[] eleman1:dizi ) {
+                   for (int eleman2:eleman1 ) {
+                       System.out.print( eleman2+" ");
+                   }
+                   System.out.println();
+
+               }
+               ArrayList<Integer> dizi2=new ArrayList<>();
+               for (int[] eleman3:dizi ) {
+                   for (int eleman4:eleman3 ) {
+                       dizi2.add(eleman4);
+
+                   }
+
+               }
+
+               System.out.println("Sonraki hali = " + dizi2);
+           }

@@ -1,0 +1,20 @@
+Proje Adı: Tic-Tac-Toe (XOX Oyunu) Uygulaması
+Açıklama:
+Tic-Tac-Toe, iki oyuncu arasında oynanan ve kare bir oyun tahtası üzerinde gerçekleştirilen
+bir oyundur. Bu proje ile öğrencileriniz, Java programlama dilini kullanarak basit bir Tic-TacToe oyunu geliştireceklerdir.
+Proje İçeriği:
+1. Oyun Tahtası ve Oyuncular:
+ - İki oyunculu bir Tic-Tac-Toe oyunu için bir oyun tahtası oluşturun. Bu, 3x3'lük bir 2D dizi
+şeklinde temsil edilebilir.
+ - Oyuncuları "X" ve "O" olarak temsil edin. Kullanıcılar sırayla "X" ve "O" karakterlerini
+yerleştireceklerdir.
+2. Kullanıcı Girişi:
+ - Oyuncuların sırayla hamle yapmasını sağlamak için bir giriş mekanizması oluşturun.
+ - Kullanıcıdan hamle yapacağı sütun ve satır koordinatlarını girmesini isteyin.
+ - Girilen koordinatların geçerli olup olmadığını kontrol edin. Geçersiz bir koordinat
+girildiğinde kullanıcıya uyarı verin.
+3. Oyun Kuralları ve Kontrol:
+ - Oyuncuların hamlelerini oyun tahtasında uygun konumlara yerleştirin.
+ - Her hamleden sonra oyun tahtasını ekrana bastırın.
+ - Her hamleden sonra oyunun sona erip ermediğini kontrol edin. Kazanan oyuncuyu veya
+beraberlik durumunu belirleyin

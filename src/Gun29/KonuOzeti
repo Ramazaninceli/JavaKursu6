@@ -1,0 +1,29 @@
+Access Modifiers (Erişim belirteçleri, izinler)
+1- Classın içinde erişim
+2- Paketin içinden erişim
+3- Diğer paketlerden erişim
+
+public, private, default(hiç bir şey yazılmazsa, friendly), protected
+
+public : projenin her yerinden erişime açık
+         class, metod, field
+
+default: (herhangi bir şey yazılmazsa) , sadece kendi paketindekiler erişebilir
+         class, metod, field
+
+private: sadece bulunduğu classın içinden erişilebilir
+         metod, field
+
+protected: default aynı çalışır, (bir erişim izni daha var onu 3 konu göreceğiz)
+           metod, field
+
+
+   GANDALF = "Public" olarak tanımlanır çünkü onun bilgeliği ve arifliği herkes içindir, doğrudan erişime açıktır.
+
+   FRODO = "Private" olarak tanımlanır çünkü yüzük taşıyıcısı görevini terk edemez ve doğrudan erişime kapalıdır.
+
+   ARAGORN = "Protected" olarak tanımlanır çünkü yüzük taşıyıcısını korumakla görevlidir doğrudan erişime kapalıdır ancak Aragornun koruması altında erişilebilir.
+
+   SAMWİSE = "Default" olarak tanımlanır yüzük taşıyıcısının yardımcısıdır yüzüğe doğrudan erişimi yoktur ama diğer arkadaşları için yardım erişimine açıktır.
+
+   TEK YÜZÜK = "Final" olarak tanımlanır çünkü yok edilemez, erişilemez ancak ve ancak yaratıldığı yerde yok edilebilir, erişilebilir.
